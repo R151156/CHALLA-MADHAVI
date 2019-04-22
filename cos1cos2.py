@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+import numpy as np
+t=np.arange(0,20,0.01)
+x1=np.cos(2*np.pi*t)
+plt.subplot(3,1,1)
+plt.plot(t,x1)
+plt.title('cos1')
+plt.xlabel('time')
+plt.ylabel('amplitude')
+x2=np.cos(2*np.pi*t)
+plt.subplot(3,1,2)
+plt.plot(t,x2)
+plt.title('cos2')
+plt.xlabel('time')
+plt.ylabel('amplitude')
+x3=x1+x2
+plt.subplot(3,1,3)
+plt.plot(t,x3)
+plt.title('addition of two cos waves')
+plt.xlabel('time')
+plt.ylabel('amplitude')
+plt.show( )
